@@ -1,5 +1,6 @@
 {
     "name": "Dev Container Definition",
+    "postCreateCommand": "sudo apt-get upate -y && brew upgrade",
     "image": "bgreengo/codespace-devtools:latest",
     "extensions": [
         "dbaeumer.vscode-eslint@2.1.5"
