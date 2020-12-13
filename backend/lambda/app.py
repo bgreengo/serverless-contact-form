@@ -6,8 +6,8 @@ import boto3
 from botocore.exceptions import ClientError
 
 # Default config vals
-DYNAMODB_TABLE_NAME = os.environ['SIGNUP_TABLE']
-SNS_TOPIC = os.environ['NEW_SIGNUP_TOPIC']
+DYNAMODB_TABLE_NAME = os.environ['TABLE_NAME']
+SNS_TOPIC = os.environ['SIGNUP_TOPIC']
 DEBUG = os.environ.get('FLASK_DEBUG') in ['true', 'True']
 
 # Connect to DynamoDB and get ref to Table
